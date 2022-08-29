@@ -1,0 +1,60 @@
+<div x-show="selected === 'option-5'" class="">
+  <div class="pa4 black-80 flex ">
+    <div class="w-25 mr2">
+      <div
+        role="img"
+        aria-label="Watchmen movie"
+        class="aspect-ratio--4x6"
+        style="
+        background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/watchmen.jpg)
+          no-repeat center center;
+        background-size: cover;
+        "
+      ></div>
+    </div>
+    <div class="w-75">
+      <label for="name" class="fw7 b db mb2">Luas Tanah</label>
+      <input
+        id="name"
+        class="input-reset ba b--black-20 pa2 mb2 db w-auto"
+        type="number"
+        aria-describedby="name-desc"
+      />
+      <small class="f6 black-60 db mb2">Contoh : 100</small>
+      <label for="name" class="fw7 db mb2 mr2">Luas Bangunan</label>
+      <input
+        id="name"
+        class="input-reset ba b--black-20 pa2 mb2 db w-auto"
+        type="number"
+        aria-describedby="name-desc"
+      />
+      <small class="f6 black-60 db mb2">Contoh : 80</small>
+      <label for="name" class="fw7 b db mb2">NOP</label>
+      <input
+        id="nop"
+        type="text"
+        class="input-reset ba b--black-20 pa2 mb2 db w-50"
+        name="nop"
+        aria-describedby="name-desc"
+        minlength="18"
+        maxlength="18"
+        required
+      />
+      <small class="f6 black-60 db mb2"
+      >Contoh : 737103000100200312340</small
+      >
+    </div>
+  </div>
+  <div class="flex justify-between">
+    <a
+      class="w-50 bg-black-10 link pa4 tc"
+      href="#option-4"
+      x-on:click="selected = 'option-4'"
+    >Prev</a>
+    <a
+      class="w-50 bg-black-10 link pa4 tc"
+      href="#option-6"
+      x-on:click="selected = 'option-6'"
+    >Next</a>
+  </div>
+</div>

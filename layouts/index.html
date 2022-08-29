@@ -1,0 +1,35 @@
+{{ define "main"}}
+<div
+  class="bg-white center mw7-ns hidden ba mv4"
+  x-data="{ selected: 'option-1' }"
+>
+  {{- partial "nav.html" . -}}
+
+  <form>
+    <!-- karyawans -->
+    {{ partial "section/karyawan" .}}
+
+    <!-- aktas -->
+    {{ partial "section/akta" .}}
+
+    <!-- para pihaks -->
+    {{ partial "section/pihak" .}}
+
+    <!-- sertipikats -->
+    {{ partial "section/sertipikat" .}}
+
+    <!-- pbb -->
+    {{ partial "section/pbb" .}}
+
+    <!-- pinjamans / transaksi  -->
+    {{ partial "section/pinjaman-transaksi" .}} 
+
+    <!-- summary -->
+    <!--<div x-show="selected === 'option-7'" class="">
+Summary
+</div>-->
+
+  </form>
+
+</div>
+{{ end }}

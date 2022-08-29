@@ -1,0 +1,73 @@
+<nav class="bg-black-10">
+  <ul class="flex pa0 ma0 justify-between">
+    <li
+      class="list"
+      x-bind:class="{ 'bg-white b': selected === 'option-1' }"
+    >
+      <a
+        class="link black dib ph4 pv3"
+        href="#option-1"
+        x-on:click="selected = 'option-1'"
+      >Karyawan</a
+      >
+    </li>
+    <li 
+      class="list"
+      x-bind:class="{ 'bg-white b': selected === 'option-2' }"
+    >
+      <a
+        class="link black dib ph4 pv3"
+        href="#option-2"
+        x-on:click="selected = 'option-2'"
+      >Akta</a
+      >
+    </li>
+    <li
+      class="list"
+      x-bind:class="{ 'bg-white b': selected === 'option-3' }"
+    >
+      <a
+        class="link black dib ph4 pv3"
+        href="#option-3"
+        x-on:click="selected = 'option-3'"
+      >Pihak</a
+      >
+    </li>
+    <li
+      class="list"
+      x-bind:class="{ 'bg-white b': selected === 'option-4' }"
+    >
+      <a
+        class="link black dib ph4 pv3"
+        href="#option-4"
+        x-on:click="selected = 'option-4'"
+      >Sertipikat</a
+      >
+    </li>
+    <li
+      class="list"
+      x-bind:class="{ 'bg-white b': selected === 'option-5' }"
+    >
+      <a
+        class="link black dib ph4 pv3"
+        href="#option-5"
+        x-on:click="selected = 'option-5'"
+      >PBB</a
+      >
+    </li>
+    <li
+      class="list"
+      x-bind:class="{ 'bg-white b': selected === 'option-6' }"
+    >
+      <a
+        class="link black dib ph4 pv3"
+        href="#option-6"
+        x-on:click="selected = 'option-6'"
+      >Pinjaman/Transaksi</a
+      >
+    </li>
+    <!-- <li class="list pa3" x-bind:class="{ 'bg-white b': selected === 'option-7' }">
+<a class="link black" href="#option-7" x-on:click="selected = 'option-7'">Summary</a>
+</li>-->
+  </ul>
+</nav>
