@@ -1,0 +1,35 @@
+{{ define "main"}}
+<div
+  class="bg-white center hidden ba"
+  x-data="{ selected: 'option-1' }"
+>
+
+  <form>
+    <!-- karyawans -->
+    {{ partial "section/karyawan" .}}
+
+    <!-- aktas -->
+    {{ partial "section/akta" .}}
+
+    <!-- para pihaks -->
+    {{ partial "section/pihak" .}}
+
+    <!-- sertipikats -->
+    {{ partial "section/sertipikat" .}}
+
+    <!-- pbb -->
+    {{ partial "section/pbb" .}}
+
+    <!-- pinjamans / transaksi  -->
+    {{ partial "section/pinjaman-transaksi" .}} 
+
+    <!-- summary -->
+    <!--<div x-show="selected === 'option-7'" class="">
+Summary
+</div>-->
+
+    {{- partial "nav.html" . -}}
+  </form>
+
+</div>
+{{ end }}

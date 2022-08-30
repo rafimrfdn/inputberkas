@@ -1,0 +1,26 @@
+<div x-show="selected === 'option-4'" class="">
+  <div class="pa4 black-80 flex ">
+    <div class="w-25 mr2">
+      <div role="img" aria-label="Sunshine movie" class="aspect-ratio--4x6" style="
+        background: url(https://s3-us-west-1.amazonaws.com/tachyonsio/img/sunshine.jpg)
+          no-repeat center center;
+        background-size: cover;
+        "></div>
+    </div>
+    <div class="w-75">
+      <label for="name" class="fw7 b db mb2">Jenis dan Nomor Hak</label>
+      <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-auto" type="text" aria-describedby="name-desc" />
+      <small class="f6 black-60 db mb2">Contoh : SHM 00111</small>
+      <label for="name" class="fw7 db mb2 mr2">Kecamatan</label>
+      <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-auto" type="text" aria-describedby="name-desc" />
+      <small class="f6 black-60 db mb2">Contoh : Tamalate</small>
+      <label for="name" class="fw7 b db mb2">Kelurahan</label>
+      <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-auto" type="text" aria-describedby="name-desc" />
+      <small class="f6 black-60 db mb2">Contoh : Barombong</small>
+    </div>
+  </div>
+  <div class="flex justify-between">
+    <a class="w-50 bg-black-10 link pa4 tc black" href="#option-3" x-on:click="selected = 'option-3'">Prev</a>
+    <a class="w-50 bg-black-10 link pa4 tc black" href="#option-5" x-on:click="selected = 'option-5'">Next</a>
+  </div>
+</div>
